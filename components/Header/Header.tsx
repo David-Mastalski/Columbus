@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./Header.module.css";
 import HeaderMobile from "../HeaderMobile/HeaderMobile";
 import HeaderDesktop from "../HeaderDesktop/HeaderDesktop";
@@ -10,8 +10,8 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header>
-      <div className={`container container-padd ${styles.header}`}>
+    <header className={styles.header}>
+      <div className={`container container-padd`}>
         <div className={styles.headerInner}>
           <HeaderMobile isOpen={isOpen} setIsOpen={setIsOpen} />
           <HeaderDesktop />
