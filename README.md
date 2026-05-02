@@ -28,8 +28,6 @@ It implements a product listing page with a cart system and simulated asynchrono
   - promotion / discount (if available)
   - calculated discounted price
 
----
-
 ### 🛒 Cart System
 - Global cart state managed with Context + useReducer
 - Add-to-cart functionality
