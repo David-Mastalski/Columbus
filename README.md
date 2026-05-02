@@ -33,3 +33,18 @@ It implements a product listing page with a cart system and simulated asynchrono
 - Add-to-cart functionality
 - Cart badge counter in header
 - Fake async request simulating server delay before updating state
+
+---
+
+📦 Installation
+
+```bash
+git clone https://github.com/David-Mastalski/Columbus.git
+cd Columbus
+```
+```bash
+npm install
+```
+```bash
+npm run dev
+```
