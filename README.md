@@ -36,7 +36,7 @@ It implements a product listing page with a cart system and simulated asynchrono
 
 ---
 
-📦 Installation
+## 📦 Installation
 
 ```bash
 git clone https://github.com/David-Mastalski/Columbus.git
