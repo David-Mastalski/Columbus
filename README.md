@@ -13,6 +13,8 @@ It implements a product listing page with a cart system and simulated asynchrono
 - useReducer
 - CSS Modules
 
+  
+
 ## 📦 Features
 
 ### 🛍 Product Listing
