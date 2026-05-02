@@ -12,3 +12,24 @@ It implements a product listing page with a cart system and simulated asynchrono
 - React Context
 - useReducer
 - CSS Modules
+
+## 📦 Features
+
+### 🛍 Product Listing
+- Displays a list of products fetched from a provided REST API schema
+- Each product includes:
+  - image
+  - title
+  - description
+  - brand
+  - price
+  - promotion / discount (if available)
+  - calculated discounted price
+
+---
+
+### 🛒 Cart System
+- Global cart state managed with Context + useReducer
+- Add-to-cart functionality
+- Cart badge counter in header
+- Fake async request simulating server delay before updating state
