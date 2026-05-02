@@ -1,0 +1,33 @@
+.addToCartBtn {
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.4rem;
+  transition: all 0.2s ease-in-out;
+
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+
+  & svg {
+    width: 1.5rem;
+  }
+
+  &:hover {
+    background-color: var(--extra-color);
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .addToCartBtn {
+    font-size: 1.2rem;
+    gap: 0.8rem;
+  }
+}

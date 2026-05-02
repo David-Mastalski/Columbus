@@ -1,0 +1,27 @@
+.header {
+  background-color: #f8fafb;
+
+  & .headerInner {
+    min-height: 25rem;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & h1 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header .headerInner {
+    min-height: 40rem;
+
+    & h1 {
+      font-size: 3.6rem;
+    }
+  }
+}

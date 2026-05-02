@@ -1,0 +1,96 @@
+.tile {
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+  border-radius: 0.8rem;
+  border: 2px solid var(--light-grey);
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.content {
+  margin-top: 1rem;
+  padding: 0 3px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.brandName {
+  color: var(--middle-grey);
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.discountPriceRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+
+  & .percentageDiscount {
+    background-color: var(--light-grey);
+    border-radius: 1rem;
+    color: red;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 2px 6px;
+  }
+}
+
+.regularPrice {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  color: var(--middle-grey);
+  font-size: 1rem;
+
+  & .oldPrice {
+    text-decoration: line-through;
+  }
+}
+
+.description {
+  color: var(--middle-grey);
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .brandName {
+    font-size: 1.2rem;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .price {
+    font-size: 1.6rem;
+  }
+  .regularPrice {
+    font-size: 1.1rem;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
+}

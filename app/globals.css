@@ -1,26 +1,64 @@
-@import "tailwindcss";
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --light-grey: #f8f8f8;
+  --middle-grey: #757575;
+  --extra-color: rgb(187, 12, 41);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-size: 62.5%;
 }
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  min-height: 100dvh;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.not-allowed {
+  cursor: not-allowed;
+}
+.container {
+  width: 100%;
+}
+.container-padd {
+  padding: 0 1.5rem;
+}
+.headerNavBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 97vw;
+    margin: 0 auto;
+  }
+  .headerNavBtns {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1850px;
+  }
 }

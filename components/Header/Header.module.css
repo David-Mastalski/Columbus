@@ -1,0 +1,19 @@
+.header {
+  /* background-color: green; */
+}
+
+.headerInner {
+  display: flex;
+  flex-direction: column;
+
+  height: 6rem;
+  padding: 1rem 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .headerInner {
+    padding: 2rem 0 0;
+    height: auto;
+  }
+}
