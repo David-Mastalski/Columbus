@@ -5,7 +5,7 @@ It implements a product listing page with a cart system and simulated asynchrono
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - Next.js (App Router)
 - TypeScript
@@ -15,9 +15,9 @@ It implements a product listing page with a cart system and simulated asynchrono
 
 ---
 
-## 📦 Features
+## Features
 
-### 🛍 Product Listing
+### Product Listing
 - Displays a list of products fetched from a provided REST API schema
 - Each product includes:
   - image
@@ -28,7 +28,7 @@ It implements a product listing page with a cart system and simulated asynchrono
   - promotion / discount (if available)
   - calculated discounted price
 
-### 🛒 Cart System
+### Cart System
 - Global cart state managed with Context + useReducer
 - Add-to-cart functionality
 - Cart badge counter in header
@@ -36,7 +36,7 @@ It implements a product listing page with a cart system and simulated asynchrono
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 git clone https://github.com/David-Mastalski/Columbus.git
